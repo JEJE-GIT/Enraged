@@ -1,0 +1,24 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-p: 'Antic Slab', serif;
+    --font-h1: 'Silkscreen', cursive;
+    --font-h2: 'Kanit', sans-serif;
+    --font-h3: 'Odibee Sans', cursive;
+    --font-h4: 'Prompt', sans-serif;
+    --font-btn: 'Exo 2', sans-serif;
+
+    --font-size-content: 1.125rem;
+
+    --font-size-button: 1.25rem;
+
+    /// Grosseur des textes
+    --font-size-h1: 3.8rem;
+    --font-size-h2: 3.75rem;
+    --font-size-h3: 1.5rem;
+    --font-size-h4: 1.25rem;
+    --font-size-h5: 1rem;
+    --font-size-h6: 0.8rem;
+}

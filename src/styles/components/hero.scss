@@ -1,0 +1,51 @@
+.hero {
+    padding: 10% 0 10% 0;
+    position: relative;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: $breakpoint-xs) {
+        height: 70vh;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 80vh;
+    }
+
+    .content_hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 50%;
+
+        h1 {
+            @media screen and (min-width: $breakpoint-xs) {
+                font-size: calc(var(--font-size-h1) / 3.3);
+                line-height: 30px;
+            }
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: calc(var(--font-size-h1) / 2);
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: calc(var(--font-size-h1) / 1.2);
+                line-height: 100px;
+            }
+        }
+
+        .btn {
+            margin-top: 5%;
+            font-size: var(--font-size-h3);
+
+            @media screen and (min-width: $breakpoint-xs) {
+                font-size: calc(var(--font-size-h3) / 1.5);
+            }
+        }
+    }
+}

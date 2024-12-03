@@ -1,0 +1,15 @@
+.footer {
+    background: linear-gradient(180deg, #00066c 0%, #366bdf 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 5vh 0 5vh 0;
+
+    p {
+        margin-top: 30px;
+    }
+}
