@@ -32,3 +32,14 @@ body {
     line-height: 1.6;
     background: var(--color-primary-darker);
 }
+
+.media_fix {
+    a {
+        transform: scale(1);
+        transition: all 0.4s ease; /* Smooth animation */
+    }
+
+    a:hover {
+        transform: scale(1.3);
+    }
+}

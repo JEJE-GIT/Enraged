@@ -8,6 +8,16 @@
     align-items: center;
     justify-content: center;
 
+    img {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1;
+    }
+
     @media screen and (min-width: $breakpoint-xs) {
         height: 70vh;
     }
@@ -24,28 +34,29 @@
         height: 50%;
 
         h1 {
-            @media screen and (min-width: $breakpoint-xs) {
-                font-size: calc(var(--font-size-h1) / 3.3);
-                line-height: 30px;
-            }
-
-            @media screen and (min-width: $breakpoint-sm) {
-                font-size: calc(var(--font-size-h1) / 2);
-            }
-
-            @media screen and (min-width: $breakpoint-md) {
-                font-size: calc(var(--font-size-h1) / 1.2);
-                line-height: 100px;
-            }
+            font-weight: bold !important;
+            color: #33d833;
+            text-shadow: 0 0 15px #87fd87;
+            -webkit-text-stroke: 0.1px #93ff93;
+            text-transform: uppercase;
         }
 
-        .btn {
-            margin-top: 5%;
-            font-size: var(--font-size-h3);
+        .hero_btn {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            color: #383838;
+            background-color: #4adc4a;
+            border-radius: 12px;
+            padding: 1% 2%;
+            box-shadow: 0 0 15px #87fd87;
+            outline: 10px black !important;
+            margin-top: 10%;
+            transform: scale(1);
+            transition: all 0.4s ease; /* Smooth animation */
+        }
 
-            @media screen and (min-width: $breakpoint-xs) {
-                font-size: calc(var(--font-size-h3) / 1.5);
-            }
+        .hero_btn:hover {
+            transform: scale(1.2);
         }
     }
 }
