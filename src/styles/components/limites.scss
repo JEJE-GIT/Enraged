@@ -1,0 +1,30 @@
+.limites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 3% 0;
+
+    h2 {
+        text-transform: uppercase;
+        color: #fabf68;
+        font-weight: 300;
+        margin-bottom: 5%;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-family: var(--font-p);
+        color: #c1c5c6;
+
+        .victoire {
+            color: #00cd4f;
+        }
+
+        .defaite {
+            color: #e00004;
+        }
+    }
+}

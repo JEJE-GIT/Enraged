@@ -1,0 +1,16 @@
+.roadmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10% 0;
+
+    h3 {
+        font-family: var(--font-h3);
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #fabf68;
+    }
+}

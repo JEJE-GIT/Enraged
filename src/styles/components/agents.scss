@@ -1,0 +1,36 @@
+.agents {
+    position: relative;
+    margin: 10% 0;
+
+    .text-content {
+        background-color: #d59a43;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5% 30% 5% 0;
+        text-align: left;
+        height: 60vh;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 3% 0;
+        }
+
+        p {
+            font-size: 1.688rem;
+            font-weight: 100;
+            margin: 3% 0;
+            text-transform: uppercase;
+            font-family: var(--font-p);
+        }
+    }
+
+    img {
+        position: absolute;
+        right: 10%;
+        bottom: -30%;
+    }
+}

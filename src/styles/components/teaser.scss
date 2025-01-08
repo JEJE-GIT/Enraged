@@ -1,0 +1,36 @@
+.teaser {
+    padding: 10% 0 10% 0;
+    position: relative;
+    text-align: center;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .teaser_btn {
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: white;
+        background-color: #f29d38;
+        border-radius: 12px;
+        padding: 0.3% 5%;
+        box-shadow: 0 0 15px white;
+        transform: scale(1);
+        transition: all 0.4s ease; /* Smooth animation */
+    }
+
+    .teaser_btn:hover {
+        transform: scale(1.2);
+    }
+}
