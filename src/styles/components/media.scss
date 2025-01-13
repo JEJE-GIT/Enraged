@@ -1,18 +1,36 @@
 .media_fix {
     z-index: 10;
     position: fixed;
-    right: 35px;
-    top: 25vh;
 
-    gap: 50px;
+    @media screen and (min-width: $breakpoint-xs) {
+        right: 50%;
+        transform: translate(50%, 0);
+        bottom: 3vh;
+        gap: 25px;
 
-    display: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        gap: 50px;
+    }
 
     @media screen and (min-width: $breakpoint-md) {
+        right: 5vw;
+        top: -7vh;
+        gap: 1.5em;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        gap: 2em;
     }
 }
 

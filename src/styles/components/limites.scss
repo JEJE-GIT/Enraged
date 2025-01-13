@@ -5,19 +5,40 @@
     justify-content: center;
     text-align: center;
 
-    padding: 3% 0;
+    padding: 10% 0;
 
     h2 {
         text-transform: uppercase;
         color: #fabf68;
         font-weight: 300;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
+
+        @media screen and (min-width: $breakpoint-xs) {
+            font-size: calc(var(--font-size-h2) / 1.2);
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-h2);
+        }
     }
 
     p {
         text-transform: uppercase;
         font-family: var(--font-p);
         color: #c1c5c6;
+
+        @media screen and (min-width: $breakpoint-xs) {
+            font-size: calc(var(--font-size-content) / 1.2);
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-content);
+            width: 70%;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 100%;
+        }
 
         .victoire {
             color: #00cd4f;
