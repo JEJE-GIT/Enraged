@@ -20,11 +20,15 @@
     }
 
     @media screen and (min-width: $breakpoint-xs) {
-        height: 60vh;
+        height: 45vh;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 55vh;
     }
 
     @media screen and (min-width: $breakpoint-md) {
-        height: 50vh;
+        height: 65vh;
     }
 
     .content_hero {

@@ -2,15 +2,38 @@
     position: relative;
     margin: 10% 0;
 
-    .text-content {
-        background-color: #d59a43;
+    @media screen and (min-width: $breakpoint-xs) {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 5% 30% 5% 0;
-        text-align: left;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: block;
+    }
+
+    .text-content {
+        background-color: #d59a43;
+
         height: 60vh;
+
+        @media screen and (min-width: $breakpoint-xs) {
+            text-align: center;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5% 30% 5% 0;
+            text-align: left;
+        }
 
         h3 {
             font-size: 3rem;
@@ -20,17 +43,46 @@
         }
 
         p {
-            font-size: 1.688rem;
             font-weight: 100;
             margin: 3% 0;
             text-transform: uppercase;
             font-family: var(--font-p);
+
+            @media screen and (min-width: $breakpoint-xs) {
+                font-size: 1.2rem;
+            }
+
+            @media screen and (min-width: $breakpoint-md) {
+                font-size: 1.688rem;
+            }
         }
     }
 
     img {
-        position: absolute;
-        right: 10%;
-        bottom: -30%;
+        @media screen and (min-width: $breakpoint-xs) {
+            display: block;
+            background-color: #d59a43;
+            width: 100%;
+            height: auto;
+        }
+
+        @media screen and (min-width: $breakpoint-md) {
+            background: none;
+            width: 30%;
+            height: auto;
+            position: absolute;
+            right: 1%;
+            bottom: 9%;
+        }
+
+        @media screen and (min-width: $breakpoint-lg) {
+            width: 30%;
+            bottom: -10%;
+        }
+
+        @media screen and (min-width: $breakpoint-xl) {
+            width: 25%;
+            bottom: -20%;
+        }
     }
 }
