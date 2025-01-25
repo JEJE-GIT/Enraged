@@ -13,4 +13,24 @@
         font-weight: 400;
         color: #fabf68;
     }
+
+    .roadmap_pc {
+        @media screen and (min-width: $breakpoint-xs) {
+            display: none;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            display: block;
+        }
+    }
+
+    .roadmap_mobile {
+        @media screen and (min-width: $breakpoint-xs) {
+            display: block;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            display: none;
+        }
+    }
 }

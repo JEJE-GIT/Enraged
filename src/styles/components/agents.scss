@@ -9,14 +9,25 @@
         justify-content: center;
     }
 
+    @media screen and (min-width: $breakpoint-sm) {
+        background-color: #d59a43;
+    }
+
     @media screen and (min-width: $breakpoint-md) {
         display: block;
+        background: none;
     }
 
     .text-content {
         background-color: #d59a43;
 
-        height: 60vh;
+        @media screen and (min-width: $breakpoint-xs) {
+            text-align: center;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         @media screen and (min-width: $breakpoint-xs) {
             text-align: center;
@@ -33,6 +44,7 @@
             justify-content: center;
             padding: 5% 30% 5% 0;
             text-align: left;
+            height: 60vh;
         }
 
         h3 {
@@ -66,6 +78,13 @@
             height: auto;
         }
 
+        @media screen and (min-width: $breakpoint-sm) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+        }
+
         @media screen and (min-width: $breakpoint-md) {
             background: none;
             width: 30%;
@@ -78,6 +97,7 @@
         @media screen and (min-width: $breakpoint-lg) {
             width: 30%;
             bottom: -10%;
+            right: 6%;
         }
 
         @media screen and (min-width: $breakpoint-xl) {

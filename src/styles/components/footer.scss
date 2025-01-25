@@ -7,11 +7,20 @@
     justify-content: center;
     text-align: center;
 
-    padding: 5vh 0 5vh 0;
+    @media screen and (min-width: $breakpoint-xs) {
+        padding: 10vh 0 10vh 0;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        padding: 12vh 0 12vh 0;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 6vh 0 6vh 0;
+    }
 
     p {
         font-family: var(--font-p);
         text-transform: uppercase;
-        margin-top: 30px;
     }
 }

@@ -19,8 +19,15 @@
     p {
         font-family: var(--font-btn);
         margin: 5% 0;
-        font-size: 1.6rem;
         text-transform: uppercase;
         font-weight: 100;
+
+        @media screen and (min-width: $breakpoint-xs) {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            font-size: 1.6rem;
+        }
     }
 }
